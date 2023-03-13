@@ -48,7 +48,7 @@ body {
   margin: 0 auto;
   padding: 0 15px;
   width: 1158px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 .hidden-title {
@@ -145,11 +145,6 @@ body {
 /* Main */
 /* Hero */
 
-/* .hero-container {
-  padding-top: 188px;
-  padding-bottom: 188px;
-} */
-
 .hero {
   padding-top: 188px;
   padding-bottom: 188px;
@@ -166,6 +161,8 @@ body {
   color: var(--primary-white-color);
 }
 .hero-btn {
+  border-width: 0px;
+  border-color: var(--active-color);
   padding: 16px 32px;
   border-radius: 4px;
   display: inline-block;
@@ -301,9 +298,16 @@ body {
 
 .filter-list {
   display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 96px;
+  padding-bottom: 72px;
 }
 
 .filter-nav {
+  padding: 12px 24px;
+  border: 1px solid var(--footer-main-text-color);
+  border-radius: 4px;
   font-family: inherit;
   background-color: var(--btns-color);
   font-weight: 500;
@@ -333,7 +337,6 @@ body {
   border: 1px solid var(--footer-main-text-color);
   border-top: 0;
 }
-
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
